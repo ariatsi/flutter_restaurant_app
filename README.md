@@ -43,4 +43,4 @@ L'application présente le menu d’un restaurant. Les plats sont triés par cat
 
 Voici un aperçu attendu de l’application :
 
-<img src="Screenshot_Menu.png" width="250px" /
+<img src="Screenshot_Menu.png" width="250px" />
