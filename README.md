@@ -1,16 +1,46 @@
-# flutter_restaurant_app
+# TP Flutter – Menu d’un Restaurant
 
-A new Flutter project.
+Ce projet Flutter a été réalisé dans le cadre du TD "Layouts & Scrolls" dont l’objectif est de mettre en pratique les notions de `Row`, `Column`, `ListView`, `Card`, et de construction d’interfaces responsives.
 
-## Getting Started
+## Objectifs pédagogiques
 
-This project is a starting point for a Flutter application.
+- Maîtriser les layouts imbriqués (`Row`, `Column`, `Expanded`, `Card`, etc.).
+- Savoir construire une interface scrollable horizontalement et verticalement.
+- Réutiliser des composants visuels pour afficher des données organisées.
 
-A few resources to get you started if this is your first Flutter project:
+## Contexte
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+L'application présente le menu d’un restaurant. Les plats sont triés par catégorie (Entrées, Plats, Desserts, etc.), avec une navigation horizontale entre les catégories, et un affichage vertical des plats sous forme de cartes illustrées.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Structure du projet
+
+- `main.dart` : point d’entrée de l’application.
+- `assets/images/` : dossier contenant les images des plats (à créer dans le dossier `assets`).
+- `pubspec.yaml` : à modifier pour inclure les images dans les assets.
+
+## Fonctionnalités principales
+
+- Catégories scrollables horizontalement.
+- Affichage conditionnel des plats selon la catégorie sélectionnée.
+- Fiches de plats avec image, nom, description et prix.
+- Utilisation de `ListView.builder` pour performance et flexibilité.
+
+## Lancer le projet
+
+1. Ouvrir le projet dans Android Studio.
+2. Vérifier que les images sont bien placées dans `assets/images/`.
+3. Vérifier que le fichier `pubspec.yaml` contient bien :
+
+   ```yaml
+   flutter:
+     assets:
+       - assets/images/
+   ```
+
+4. Exécuter le projet sur un émulateur ou un appareil connecté.
+
+## Exemple d'interface
+
+Voici un aperçu attendu de l’application :
+
+![Capture d'écran du menu](Screenshot_Menu.png)
